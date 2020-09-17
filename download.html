@@ -1,0 +1,32 @@
+{% extends "basicheader.html" %}
+{% block body %}
+
+ <div class="container">
+  <div class="jumbotron">
+   
+      <h1 class="display-3" style="color: MediumSeaGreen"></h1>
+      <p style="color: MediumSeaGreen"></p>
+      <p style="color: MediumSeaGreen"></p>
+    </div>
+
+<form method="POST" action="/download",enctype="multipart/form-data" id="download-form">
+ <div class="form-group">
+
+   <div class="form-group">
+    <label for="usr" ><h2>list of file is:{{ val }}</h2></label>
+  </div>
+
+    <label for="usr"><h3>Type upload to upload data and download to download data:</h3></label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter details" name="decdata2" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+</div> <!-- /container -->
+
+{% endblock %}
